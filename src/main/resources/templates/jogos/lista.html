@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<h1>Jogos</h1>
+</head>
+
+<body>
+	<h1>Jogos Cadastrados</h1>
+
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Nome</th>
+				<th>Desenvolvedora</th>
+				<th>Ano de Lançamento</th>
+				<th>Plataforma</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="jogo: ${jogos}">
+				<td th:text="${jogo.nome}"></td>
+				<td th:text="${jogo.desenvolvedora}"></td>
+				<td th:text="${jogo.anoLancamento}"></td>
+				<td th:text="${jogo.plataforma}"></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+
+</html>
