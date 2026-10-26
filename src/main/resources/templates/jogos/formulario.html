@@ -12,18 +12,22 @@
 		<p>
 			<label>Nome</label>
 			<input type="text" th:field="*{nome}">
+			<span  th:errors="*{nome}"></span>
 		</p>
 		<p>
 			<label>Desenvolvedora</label>
 			<input type="text" th:field="*{desenvolvedora}">
+			<span  th:errors="*{desenvolvedora}"></span>
 		</p>
 		<p>
 			<label>Ano de Lançamento</label>
 			<input type="text" th:field="*{anoLancamento}">
+			<span  th:errors="*{anoLancamento}"></span>
 		</p>
 		<p>
 			<label>Plataforma</label>
 			<input type="text" th:field="*{plataforma}">
+			<span  th:errors="*{plataforma}"></span>
 		</p>
 
 		<button type="submit">Cadastrar Jogo</button>
